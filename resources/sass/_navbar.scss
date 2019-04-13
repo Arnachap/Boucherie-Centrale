@@ -1,0 +1,52 @@
+.navbar {
+    padding: 0 8px;
+    background-color: transparent;
+    @include ease;
+
+    &.scrolled {
+        background-color: $white;
+        border-bottom: solid .5px $black;
+
+        .navbar-brand {
+            color: $red;
+        }
+        
+        .nav-item .nav-link {
+            color: $black;
+
+            &:hover,
+            &.active {
+                color: $red;
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: $white;
+        font-size: 28px;
+        letter-spacing: .5px;
+        @include titleFont;
+        @include ease;
+
+        &:hover {
+            color: $red-light;
+        }
+    }
+
+    .nav-item {
+        margin-right: 6px;
+
+        .nav-link {
+            color: $white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            @include headingFont;
+            @include ease;
+
+            &:hover,
+            &.active {
+                color: $red-light;
+            }
+        }
+    }
+}

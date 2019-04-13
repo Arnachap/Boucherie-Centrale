@@ -1,0 +1,65 @@
+#headerSlider {
+    .carousel-indicators li {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    .carousel-item {
+        max-height: 100vh;
+
+        img {
+            filter: brightness(90%);
+        }
+
+        .carousel-caption {
+            bottom: 8%;
+            @include headingFont;
+
+            h5 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 26px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+
+.article {
+    border: 1px solid $grey;
+    border-radius: 4px;
+    box-shadow: 0 .125rem .25em rgba(0, 0, 0, .075);
+    overflow: hidden;
+    margin-bottom: 30px;
+    @include ease;
+
+    &:hover {
+        box-shadow: 0 .5rem 1em rgba(0, 0, 0, .075);
+    }
+
+    .col-8 {
+        padding: 24px 30px;
+
+        h3 {
+            @include titleFont;
+        }
+
+        a {
+            color: $red;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+
+    .col-4 {
+        padding-right: 0;
+    }
+}
+
+.map {
+    background-color: $black;
+}

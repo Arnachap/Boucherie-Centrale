@@ -1,0 +1,37 @@
+.page-link {
+    margin-bottom: 20px;
+    @include ease;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+        margin-bottom: 20px;
+        border: 1px solid $grey;
+        border-radius: 3px;
+        padding: 0 10px;
+
+        &:focus {
+            border: 1px solid $red;
+        }
+    }
+
+    label {
+        margin-left: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+        background-color: $red;
+        color: $white;
+        width: 50%;
+
+        &:hover {
+            background-color: $red-light;
+            color: $white;
+        }
+    }
+}

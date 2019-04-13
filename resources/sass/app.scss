@@ -1,0 +1,30 @@
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+// Classes
+@import 'classes';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Font Awesome
+@import '~font-awesome/scss/font-awesome';
+// Navbar
+@import 'navbar';
+// Index
+@import 'index';
+// News
+@import 'news';
+// About
+@import 'about';
+// Contact
+@import 'contact';
+// Footer
+@import 'footer';
+
+body {
+  background-color: $white;
+  @include headingFont;
+}

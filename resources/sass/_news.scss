@@ -1,0 +1,27 @@
+.article p {
+    color: $black;
+}
+
+.pagination {
+    border-radius: 3px;
+
+    .page-item {
+        &.active {
+            .page-link {
+                background-color: $red;
+                color: $white;
+                border-color: $red;
+            }
+        }
+
+        &.disabled {
+            .page-link {
+                color: $grey;
+            }
+        }
+
+        .page-link {
+            color: $red;
+        }
+    }
+}
